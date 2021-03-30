@@ -49,8 +49,8 @@
           <li class="nav-item">
             <a class="nav-link" href="post.html">Sample Post</a>
           </li>
-          <li class="nav-item">
-            <select>
+          <li class="nav-item" >
+            <select data-selectItems-role="trigger">
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
@@ -128,8 +128,8 @@
 
   <div class="container">
     <div style="margin: 0 auto 20px; text-align: center">
-      <h1>California</h1>
-      <h2>March 25, 2021</h2>
+      <h1 data-state-role=target>California</h1>
+      <h2 data-date-role=today>March 25, 2021</h2>
     </div>
     
       <div class="row text-center" style="margin-left: 0; margin-right: 0;">
@@ -142,13 +142,13 @@
 						</h2>
 
 						<div class="panel-heading casecount-total">
-							<h3 class="casecount-panel-title">249,939</h3>
+							<h3 class="casecount-panel-title" data-panel-role="cumulative-cases">249,939</h3>
 						</div>
 					</div>
 				</div>
 
-				<p style="font-style: italic; color: #636466;">4,711&nbsp;SNF residents, 2,314&nbsp;OC jail inmates, and
-					916 Persons Experiencing Homelessness</p>
+				<!-- <p style="font-style: italic; color: #636466;">4,711&nbsp;SNF residents, 2,314&nbsp;OC jail inmates, and
+					916 Persons Experiencing Homelessness</p> -->
 			</div>
 
 			<div class="col-md-3 col-xs-12">
@@ -157,7 +157,7 @@
 						<h2 class="count-h2-title">Daily COVID Positive Cases Received</h2>
 
 						<div class="panel-heading casecount-total">
-							<h3 class="casecount-panel-title">97</h3>
+							<h3 class="casecount-panel-title" data-panel-role="daily-positive-cases">97</h3>
 						</div>
 					</div>
 				</div>
@@ -172,13 +172,13 @@
 							&nbsp;</h2>
 
 						<div class="panel-heading casecount-total casecount-orange">
-							<h3 class="casecount-panel-title">4,665</h3>
+							<h3 class="casecount-panel-title" data-panel-role="cumulative-deaths">4,665</h3>
 						</div>
 					</div>
 				</div>
 
-				<p style="font-style: italic; color: #636466;">Includes 1,037&nbsp;SNF residents, 511 ALF residents, 1
-					OC jail inmates, and 11&nbsp;Persons Experiencing Homelessness</p>
+				<!-- <p style="font-style: italic; color: #636466;">Includes 1,037&nbsp;SNF residents, 511 ALF residents, 1
+					OC jail inmates, and 11&nbsp;Persons Experiencing Homelessness</p> -->
 			</div>
 
 			<div class="col-md-3 col-xs-12">
@@ -188,17 +188,17 @@
 							&nbsp;</h2>
 
 						<div class="panel-heading casecount-total casecount-orange">
-							<h3 class="casecount-panel-title">19</h3>
+							<h3 class="casecount-panel-title" data-panel-role="deaths-today">19</h3>
 						</div>
 					</div>
 				</div>
 
-				<p style="font-style: italic; color: #636466;">0 skilled nursing facility residents,<br>
+				<!-- <p style="font-style: italic; color: #636466;">0 skilled nursing facility residents,<br>
 					0 skilled nursing facility staff,<br>
 					0&nbsp;assisted living facility residents,<br>
 					0&nbsp;OC Jail inmates,<br>
 					0&nbsp;Persons Experiencing Homelessness,<br>
-					19 residents (not living in a facility)</p>
+					19 residents (not living in a facility)</p> -->
 			</div>
 		</div>
 
@@ -212,12 +212,12 @@
 							&nbsp;</h2>
 
 						<div class="panel-heading casecount-total">
-							<h3 class="casecount-panel-title">3,283,859</h3>
+							<h3 class="casecount-panel-title" data-panel-role="cumulative-tests">3,283,859</h3>
 						</div>
 					</div>
 				</div>
 
-				<p style="font-style: italic; color: #636466;">&nbsp;</p>
+				<!-- <p style="font-style: italic; color: #636466;">&nbsp;</p> -->
 			</div>
 
 			<div class="col-md-3 col-xs-12">
@@ -227,7 +227,7 @@
 							&nbsp;</h2>
 
 						<div class="panel-heading casecount-total">
-							<h3 class="casecount-panel-title">12,557</h3>
+							<h3 class="casecount-panel-title" data-panel-role="tests-today">12,557</h3>
 						</div>
 					</div>
 				</div>
@@ -238,16 +238,16 @@
 			<div class="col-md-3 col-xs-12">
 				<div class="panel panel-primary casecount-panels">
 					<div class="panel-body text-center no-padding">
-						<h2 class="count-h2-title">Cases Currently Hospitalized<br>
+						<h2 class="count-h2-title" >Cases Currently Hospitalized<br>
 							&nbsp;</h2>
 
 						<div class="panel-heading casecount-total">
-							<h3 class="casecount-panel-title">167*</h3>
+							<h3 class="casecount-panel-title" data-panel-role="cases-hospitalized">167*</h3>
 						</div>
 					</div>
 				</div>
 
-				<p style="font-style: italic; color: #636466;">*Includes ICU cases</p>
+				<!-- <p style="font-style: italic; color: #636466;">*Includes ICU cases</p> -->
 			</div>
 
 			<div class="col-md-3 col-xs-12">
@@ -257,12 +257,12 @@
 							&nbsp;</h2>
 
 						<div class="panel-heading casecount-total">
-							<h3 class="casecount-panel-title">35</h3>
+							<h3 class="casecount-panel-title" data-panel-role="cases-ICU">35</h3>
 						</div>
 					</div>
 				</div>
 
-				<p style="font-style: italic; color: #636466;">ICU - Intensive Care Units</p>
+				<!-- <p style="font-style: italic; color: #636466;">ICU - Intensive Care Units</p> -->
 			</div>
 		</div>
 
@@ -383,6 +383,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
+
+  <!-- Custom scripts to fetch data -->
+  <script src="js/index.js"></script>
 
 </body>
 

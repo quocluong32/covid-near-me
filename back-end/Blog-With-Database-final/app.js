@@ -19,8 +19,12 @@ app.use(express.static("public"));
 mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
 
 const postSchema = {
+
   title: String,
-  content: String
+  content: String,
+  author: String,
+  date: new Date(),
+  //comment: [String] - optional 
 };
 
 const Post = mongoose.model("Post", postSchema);
@@ -60,7 +64,8 @@ const requestedPostId = req.params.postId;
   Post.findOne({_id: requestedPostId}, function(err, post){
     res.render("post", {
       title: post.title,
-      content: post.content
+      content: post.content,
+      author: post.author
     });
   });
 
