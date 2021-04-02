@@ -14,20 +14,25 @@ body {
 
 .column {
     float: left;
-    width: 50%;
+    width: 25%;
     margin-bottom: 16px;
     padding: 0 8px;
-  }
+}
 
 .container {
-    
     padding: 0 16px;
-  }
+}
 
 .card {
     align-items: center;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .button {
@@ -44,7 +49,19 @@ body {
 
 .button:hover {
     background-color: #555;
-  }
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+
+    .profile-image {
+        width: 100%;
+        height: auto;
+    }
+}
 
 p {
     font-family: "Raleway", sans-serif;
